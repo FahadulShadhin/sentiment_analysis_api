@@ -2,9 +2,42 @@
 
 This API accepts a text input and returns the sentiment analysis result using a pre-trained ML model.
 
-## Used Model:
+## Used Pre Trained Model:
+
+### URL:
 
 [https://huggingface.co/finiteautomata/bertweet-base-sentiment-analysis](https://huggingface.co/finiteautomata/bertweet-base-sentiment-analysis)
+
+### Installation:
+
+- Transformers:
+
+```
+pip install transformers
+```
+
+- Transformers and Pytorch:
+
+```
+pip install 'transformers[torch]'
+```
+
+- Transformers and Flax:
+
+```
+pip install 'transformers[flax]'
+```
+
+### Usage:
+
+```Python
+from transformers import pipeline
+
+model = pipeline("sentiment-analysis", model="finiteautomata/bertweet-base-sentiment-analysis")
+pred = model('I am happy today!')
+```
+
+---
 
 ## Endpoint:
 
