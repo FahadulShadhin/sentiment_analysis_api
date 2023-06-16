@@ -27,7 +27,7 @@ This API accepts a text input and returns the sentiment analysis result using a 
 ```json
 {
 	"status": "success",
-	"data": {
+	"response": {
 		"text": "I am so happy!",
 		"sentiment": "Positive"
 	}

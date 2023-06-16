@@ -15,10 +15,10 @@ class SentimentAnalyzeView(generics.GenericAPIView):
                 text=request.data['text'], sentiment=predicted_text)
             return Response(
                 {
-                    "status": "success",
-                    "data": {
-                        "text": request.data['text'],
-                        "sentiment": predicted_text
+                    'status': 'success',
+                    'response': {
+                        'text': request.data['text'],
+                        'sentiment': predicted_text
                     }
                 },
                 status=status.HTTP_201_CREATED
@@ -26,8 +26,8 @@ class SentimentAnalyzeView(generics.GenericAPIView):
         else:
             return Response(
                 {
-                    "status": "fail",
-                    "message": serializer.errors
+                    'status': 'fail',
+                    'message': serializer.errors
                 },
                 status=status.HTTP_400_BAD_REQUEST
             )
