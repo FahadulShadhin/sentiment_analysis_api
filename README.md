@@ -45,7 +45,7 @@ pred = model('I am happy today!')
 
 ## Example:
 
-#### Request:
+### Request:
 
 ```json
 {
@@ -53,7 +53,7 @@ pred = model('I am happy today!')
 }
 ```
 
-#### Response:
+### Response:
 
 ```json
 {
@@ -63,4 +63,31 @@ pred = model('I am happy today!')
 		"sentiment": "Positive"
 	}
 }
+```
+
+## Project Setup:
+
+### Install Dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+### Make Migrations:
+
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### Run server:
+
+```
+python manage.py runserver
+```
+
+### Test the API:
+
+```
+http://127.0.0.1:8000/api/analyze/
 ```
