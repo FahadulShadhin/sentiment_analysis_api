@@ -36,13 +36,8 @@ pred = model('I am happy today!')
 ```
 
 ```Python
-# output
-preds = [
-    {
-		'label': 'POS',
-        'score': 0.99250328540802
-    }
-]
+print(pred)
+>> [{'label': 'POS','score': 0.99250328540802}]
 ```
 
 ---
