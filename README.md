@@ -4,8 +4,6 @@ This API accepts a text input and returns the sentiment analysis result using a 
 
 ## Used Pre Trained Model:
 
-### URL:
-
 [https://huggingface.co/finiteautomata/bertweet-base-sentiment-analysis](https://huggingface.co/finiteautomata/bertweet-base-sentiment-analysis)
 
 ### Installation:
