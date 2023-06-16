@@ -60,7 +60,7 @@ pred = model('I am happy today!')
 	"status": "success",
 	"response": {
 		"text": "I am so happy!",
-		"sentiment": "Positive"
+		"sentiment": "positive"
 	}
 }
 ```

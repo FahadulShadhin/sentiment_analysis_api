@@ -8,9 +8,9 @@ def getSentimentResult(text) -> str:
     prediction = model(text)[0]
     result = ""
     if prediction["label"] == "POS":
-        result = "Positive"
+        result = "positive"
     elif prediction['label'] == "NEG":
-        result = "Negative"
+        result = "negative"
     else:
-        result = "Neutral"
+        result = "neutral"
     return result
