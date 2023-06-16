@@ -8,9 +8,9 @@ This API accepts a text input and returns the sentiment analysis result using a 
 
 ## Endpoint:
 
-| Method | URL            | Description                                     |
-| :----- | :------------- | :---------------------------------------------- |
-| POST   | `/api/analyze` | Return the sentiment result of the request text |
+| Method | URL            | Description                                                                  |
+| :----- | :------------- | :--------------------------------------------------------------------------- |
+| POST   | `/api/analyze` | Return the sentiment result of the request text as Positive/Neutral/Negative |
 
 ## Example:
 
