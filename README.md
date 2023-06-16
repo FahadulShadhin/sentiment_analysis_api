@@ -35,6 +35,16 @@ model = pipeline("sentiment-analysis", model="finiteautomata/bertweet-base-senti
 pred = model('I am happy today!')
 ```
 
+```Python
+# output
+preds = [
+    {
+		'label': 'POS',
+        'score': 0.99250328540802
+    }
+]
+```
+
 ---
 
 ## Endpoint:
