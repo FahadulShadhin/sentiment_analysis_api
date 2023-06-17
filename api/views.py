@@ -9,11 +9,29 @@ class SentimentAnalyzeView(generics.GenericAPIView):
 
     def post(self, request):
         serializer = self.serializer_class(data=request.data)
-        text = request.data['text']
-        sentiment = getSentimentResult(text)
+        try:
+            text = request.data['text']
+            sentiment = getSentimentResult(text)
+        except Exception as e:
+            return Response(
+                {
+                    'status': 'fail',
+                    'messsage': 'Internal server error',
+                },
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
         if serializer.is_valid():
-            serializer.save(text=text, sentiment=sentiment)
+            try:
+                serializer.save(text=text, sentiment=sentiment)
+            except:
+                return Response(
+                    {
+                        'status': 'fail',
+                        'message': 'Internal server error'
+                    },
+                    status=status.HTTP_500_INTERNAL_SERVER_ERROR
+                )
             return Response(
                 {
                     'status': 'success',
