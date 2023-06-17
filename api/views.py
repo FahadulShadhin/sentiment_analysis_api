@@ -9,16 +9,17 @@ class SentimentAnalyzeView(generics.GenericAPIView):
 
     def post(self, request):
         serializer = self.serializer_class(data=request.data)
-        predicted_text = getSentimentResult(request.data['text'])
+        text = request.data['text']
+        sentiment = getSentimentResult(text)
+
         if serializer.is_valid():
-            serializer.save(
-                text=request.data['text'], sentiment=predicted_text)
+            serializer.save(text=text, sentiment=sentiment)
             return Response(
                 {
                     'status': 'success',
                     'data': {
-                        'text': request.data['text'],
-                        'sentiment': predicted_text
+                        'text': text,
+                        'sentiment': sentiment
                     }
                 },
                 status=status.HTTP_201_CREATED
