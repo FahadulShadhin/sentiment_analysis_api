@@ -46,7 +46,7 @@ print(pred)
 
 | Method | URL            | Description                                                                  |
 | :----- | :------------- | :--------------------------------------------------------------------------- |
-| POST   | `/api/analyze` | Return the sentiment result of the request text as Positive/Neutral/Negative |
+| POST   | `/api/analyze` | Return the sentiment result of the request text as positive/neutral/negative |
 
 ## Example:
 
