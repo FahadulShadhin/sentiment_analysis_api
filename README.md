@@ -10,19 +10,19 @@ This API accepts a text input and returns the sentiment analysis result using a 
 
 - Transformers:
 
-```
+```bash
 pip install transformers
 ```
 
 - Transformers and Pytorch:
 
-```
+```bash
 pip install 'transformers[torch]'
 ```
 
 - Transformers and Flax:
 
-```
+```bash
 pip install 'transformers[flax]'
 ```
 
@@ -74,20 +74,23 @@ print(pred)
 
 ### Install Dependencies:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
 ### Make Migrations:
 
-```
+```bash
 python manage.py makemigrations
+```
+
+```bash
 python manage.py migrate
 ```
 
 ### Run server:
 
-```
+```bash
 python manage.py runserver
 ```
 
