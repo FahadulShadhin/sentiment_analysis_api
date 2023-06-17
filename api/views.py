@@ -24,7 +24,7 @@ class SentimentAnalyzeView(generics.GenericAPIView):
             return Response(
                 {
                     'status': 'fail',
-                    'messsage': 'Sentiment not found',
+                    'message': 'Sentiment not found',
                 },
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
