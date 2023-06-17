@@ -63,7 +63,7 @@ print(pred)
 ```json
 {
 	"status": "success",
-	"response": {
+	"data": {
 		"text": "I am so happy!",
 		"sentiment": "positive"
 	}
@@ -95,4 +95,27 @@ python manage.py runserver
 
 ```
 http://127.0.0.1:8000/api/analyze/
+```
+
+## Project Structure:
+
+```
+.
+├── api                 # main app for sentiment API
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── tests.py
+│   ├── urls.py
+│   ├── utils.py
+│   └── views.py
+├── manage.py
+└── sentiment_analysis  # Root directory of the project
+    ├── __init__.py
+    ├── asgi.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
 ```

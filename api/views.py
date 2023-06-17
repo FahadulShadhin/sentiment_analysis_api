@@ -16,7 +16,7 @@ class SentimentAnalyzeView(generics.GenericAPIView):
             return Response(
                 {
                     'status': 'success',
-                    'response': {
+                    'data': {
                         'text': request.data['text'],
                         'sentiment': predicted_text
                     }
