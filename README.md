@@ -115,7 +115,7 @@ http://127.0.0.1:8000/api/analyze/
 │   ├── utils.py
 │   └── views.py
 ├── manage.py
-└── sentiment_analysis  # Root directory of the project
+└── sentiment_analysis  # root directory of the project
     ├── __init__.py
     ├── asgi.py
     ├── settings.py
