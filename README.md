@@ -112,7 +112,7 @@ http://127.0.0.1:8000/api/analyze/
 │   ├── serializers.py
 │   ├── tests.py
 │   ├── urls.py
-│   ├── utils.py			  # pre-trained model used here
+│   ├── utils.py				# pre-trained model used here
 │   └── views.py
 ├── manage.py
 └── sentiment_analysis  # root directory of the project
